@@ -1,0 +1,176 @@
+/* =========================
+   Admin Dashboard Styles
+   ========================= */
+
+/* Page background */
+.dashboard-page {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  background: radial-gradient(circle at top left, #2b2f77, #1a1c43, #0f1126);
+  overflow: hidden;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Floating glowing orbs */
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.6;
+  animation: float 12s infinite ease-in-out;
+  z-index: 0;
+}
+
+.orb-1 {
+  width: 300px;
+  height: 300px;
+  background: #ff4ecd;
+  top: -80px;
+  left: -80px;
+}
+
+.orb-2 {
+  width: 250px;
+  height: 250px;
+  background: #4e6bff;
+  bottom: -100px;
+  right: -60px;
+}
+
+.orb-3 {
+  width: 220px;
+  height: 220px;
+  background: #24e2c2;
+  top: 60%;
+  left: 10%;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) translateX(0px); }
+  50% { transform: translateY(-20px) translateX(15px); }
+}
+
+/* Dashboard container */
+.dashboard-card {
+  position: relative;
+  width: 90%;
+  max-width: 1100px;
+  padding: 25px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* Card glow */
+.dashboard-glow {
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: linear-gradient(120deg, #ff4ecd, #4e6bff, #24e2c2);
+  filter: blur(20px);
+  opacity: 0.5;
+  z-index: -1;
+}
+
+/* Header */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.dashboard-header h2 {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+/* Add video button */
+.btn-gradient {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #ff4ecd, #4e6bff, #24e2c2);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-gradient:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Table */
+.table-container {
+  overflow-x: auto;
+}
+
+.dashboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #fff;
+}
+
+.dashboard-table thead {
+  background: linear-gradient(90deg, #4e6bff, #24e2c2);
+  color: #fff;
+}
+
+.dashboard-table th,
+.dashboard-table td {
+  padding: 12px;
+  text-align: center;
+}
+
+.dashboard-table tbody tr {
+  background: rgba(255, 255, 255, 0.05);
+  transition: background 0.2s;
+}
+
+.dashboard-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Action buttons */
+.btn-action {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.btn-edit {
+  background: linear-gradient(90deg, #ffc107, #ff9800);
+}
+
+.btn-edit:hover {
+  box-shadow: 0 0 10px #ffc107;
+}
+
+.btn-delete {
+  background: linear-gradient(90deg, #ff4e4e, #d32f2f);
+}
+
+.btn-delete:hover {
+  box-shadow: 0 0 10px #ff4e4e;
+}
+
+/* Video preview */
+iframe {
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}

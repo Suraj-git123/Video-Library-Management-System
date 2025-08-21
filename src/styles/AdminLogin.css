@@ -1,0 +1,209 @@
+/* === General Layout === */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Decorative background orbs */
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.4;
+}
+.orb-1 { width: 250px; height: 250px; top: -80px; left: -80px; background: #ff6a00; }
+.orb-2 { width: 300px; height: 300px; bottom: -120px; right: -120px; background: #6a11cb; }
+.orb-3 { width: 200px; height: 200px; top: 40%; left: 70%; background: #2575fc; }
+
+/* === Card === */
+.auth-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px 32px;
+  width: 100%;
+  max-width: 420px;
+  position: relative;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+  z-index: 2;
+}
+
+.card-glow {
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  background: radial-gradient(circle at top left, rgba(255,255,255,0.3), transparent 70%);
+  pointer-events: none;
+}
+
+/* === Header === */
+.auth-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.brand-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1f1c2c;
+}
+.brand-title span {
+  color: #6a11cb;
+}
+.subtitle {
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: 6px;
+}
+
+/* === Form Fields === */
+.field {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.input {
+  width: 100%;
+  padding: 14px 44px 14px 44px;
+  border: 1.5px solid #ccc;
+  border-radius: 10px;
+  background: #f9f9f9;
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.input:focus {
+  border-color: #6a11cb;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(106, 17, 203, 0.1);
+}
+
+.label {
+  position: absolute;
+  top: 50%;
+  left: 44px;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 0.9rem;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
+.input:focus + .label,
+.input:not(:placeholder-shown) + .label {
+  top: -8px;
+  left: 12px;
+  font-size: 0.75rem;
+  color: #6a11cb;
+  background: #fff;
+  padding: 0 4px;
+}
+
+/* Icon inside field */
+.field-icon {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  color: #888;
+}
+
+.toggle {
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  color: #888;
+}
+.toggle:hover {
+  color: #6a11cb;
+}
+
+/* Errors */
+.error .input {
+  border-color: #e63946;
+}
+.error-text {
+  font-size: 0.8rem;
+  color: #e63946;
+  margin-top: 4px;
+}
+
+/* === Buttons === */
+.btn-primary {
+  width: 100%;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(106, 17, 203, 0.3);
+}
+
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Spinner inside button */
+.spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255,255,255,0.6);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+@keyframes spin { 100% { transform: rotate(360deg); } }
+
+/* === Meta Row === */
+.meta-row {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+}
+
+.tip {
+  color: #666;
+}
+
+.link {
+  color: #2575fc;
+  text-decoration: none;
+  font-weight: 500;
+}
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Status text */
+.status-text {
+  color: #e63946;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+  text-align: center;
+}

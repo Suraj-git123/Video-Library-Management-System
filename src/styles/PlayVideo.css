@@ -1,0 +1,140 @@
+.play-video-page {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+/* Left side - main video */
+.main-video {
+  flex: 3;
+  background: #fff;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+.main-video h2 {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.main-video p {
+  color: #606060;
+  font-size: 14px;
+  margin: 5px 0 15px;
+}
+
+/* Right side - recommended */
+.recommended {
+  flex: 1.3;
+  background: #fff;
+  padding: 15px;
+  margin-right: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+  height: fit-content;
+}
+
+.recommended h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 8px;
+}
+
+.recommended-card {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: background 0.2s;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+.recommended-card:hover {
+  background: #f1f1f1;
+}
+
+.recommended-card iframe {
+  border-radius: 6px;
+}
+
+.recommended-card h4 {
+  font-size: 14px;
+  margin: 0 0 5px;
+}
+
+.recommended-card p {
+  font-size: 12px;
+  color: #606060;
+  margin: 0;
+}
+
+/* Comments section */
+.comments-section {
+  margin-top: 20px;
+}
+
+.comments-section h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.comment-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.comment-box input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+}
+
+.comment-box button {
+  background: #cc0000;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.comment-box button:hover {
+  background: #a80000;
+}
+
+.comment {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.comment strong {
+  display: block;          /* username on its own line */
+  font-weight: 600;
+  font-size: 14px;
+  color: #000;             /* black username */
+  margin-bottom: 3px;      /* space between username and text */
+}
+
+.comment p {
+  font-size: 14px;         /* normal comment text size */
+  color: #333;             /* dark grey text */
+  margin: 0 0 3px 0;
+}
+
+.comment small {
+  font-size: 12px;         /* small timestamp */
+  color: #888;             /* grey timestamp */
+  display: block;           /* move timestamp to its own line */
+}
+
+

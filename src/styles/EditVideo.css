@@ -1,0 +1,115 @@
+/* ===== EditVideo.css ===== */
+
+.edit-video-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.edit-video-container:hover {
+  transform: translateY(-3px);
+}
+
+.form-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+/* Form */
+.edit-form .form-group {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-form label {
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.edit-form input,
+.edit-form select {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 0.95rem;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.edit-form input:focus,
+.edit-form select:focus {
+  border-color: #0077ff;
+  box-shadow: 0 0 5px rgba(0, 119, 255, 0.25);
+}
+
+/* Error handling */
+.error-input {
+  border: 1px solid #ff4d4f !important;
+  background: #fff6f6;
+}
+
+.error {
+  color: #ff4d4f;
+  font-size: 0.85rem;
+  margin-top: 5px;
+}
+
+/* Actions */
+.form-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+/* Buttons */
+.btn-save,
+.btn-cancel {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+  text-align: center;
+  min-width: 100px;
+}
+
+/* Save Button */
+.btn-save {
+  background: #0077ff;
+  color: #fff;
+}
+
+.btn-save:hover {
+  background: #0056cc;
+}
+
+/* Cancel Button */
+.btn-cancel {
+  background: #f3f3f3;
+  color: #333;
+}
+
+.btn-cancel:hover {
+  background: #ddd;
+}
+
+/* Loading State */
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  padding: 40px;
+}

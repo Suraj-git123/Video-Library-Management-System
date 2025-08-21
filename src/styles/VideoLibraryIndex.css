@@ -1,0 +1,142 @@
+/* Background */
+.index-page {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #222);
+  overflow: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+/* Floating background circles */
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 0, 0, 0.15);
+  animation: float 8s infinite ease-in-out;
+}
+
+.circle1 {
+  width: 200px;
+  height: 200px;
+  top: -50px;
+  left: -50px;
+}
+
+.circle2 {
+  width: 300px;
+  height: 300px;
+  bottom: -80px;
+  right: -80px;
+  background: rgba(0, 123, 255, 0.15);
+}
+
+.circle3 {
+  width: 150px;
+  height: 150px;
+  top: 40%;
+  left: 70%;
+  background: rgba(255, 255, 0, 0.15);
+}
+
+/* Floating animation */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Card */
+.index-card {
+  position: relative;
+  background: rgba(30, 30, 30, 0.9);
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.4);
+  text-align: center;
+  backdrop-filter: blur(8px);
+  z-index: 2;
+}
+
+/* Title */
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff0000, #ff7300);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+/* Button Row */
+.btn-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Common button base */
+.btn-glow {
+  display: flex;                 /* instead of inline-block */
+  justify-content: center;       /* horizontal centering */
+  align-items: center;           /* vertical centering */
+  gap: 8px;                      /* spacing if icon is used */
+  
+  padding: 14px 36px;
+  border-radius: 50px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Smooth hover glow */
+.btn-glow::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  transform: skewX(-20deg);
+  transition: left 0.5s;
+}
+
+.btn-glow:hover::before {
+  left: 100%;
+}
+
+.btn-glow:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Variants */
+.btn-primary {
+  background: linear-gradient(90deg, #007bff, #0056d8);
+}
+
+.btn-warning {
+  background: linear-gradient(90deg, #ff9800, #e68900);
+}
