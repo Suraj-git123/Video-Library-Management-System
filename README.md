@@ -17,41 +17,34 @@ A web application where users can watch embedded YouTube videos, and admins can 
 ## Screenshots
 
 ### Admin Screens
-- **Admin Login:**  
-![Admin Login](Screenshots/Admin Login.png)  
+- **Admin Login**  
+![Admin Login](Screenshots/Admin%20Login.png)
 
-- **Admin Dashboard:**  
-![Admin Dashboard](Screenshots/Admin Dashboard.png)  
-![Admin Dashboard-2](Screenshots/Admin Dashboard-2.png)  
+- **Admin Dashboard**  
+![Admin Dashboard](Screenshots/Admin%20Dashboard.png)  
+![Admin Dashboard-2](Screenshots/Admin%20Dashboard-2.png)
 
-- **Edit Video:**  
-![Edit Video](Screenshots/Edit Video.png)  
+- **Edit Video**  
+![Edit Video](Screenshots/Edit%20Video.png)
 
 ### User Screens
-- **User Login:**  
-![User Login](Screenshots/user login.png)  
-![User Login-2](Screenshots/user login-2.png)  
+- **User Login**  
+![User Login](Screenshots/user%20login.png)  
+![User Login-2](Screenshots/user%20login-2.png)
 
-- **User Dashboard:**  
-![User Dashboard](Screenshots/User Dashboard.png)  
+- **User Dashboard**  
+![User Dashboard](Screenshots/User%20Dashboard.png)
 
-- **Video Play Page:**  
-![Play Video Page](Screenshots/Play video Page.png)  
+- **Play Video Page**  
+![Play Video Page](Screenshots/Play%20video%20Page.png)
 
-- **Login Dashboard:**  
-![Login Dashboard](Screenshots/Login Dashboard.png)  
+- **Login Dashboard**  
+![Login Dashboard](Screenshots/Login%20Dashboard.png)
 
-- **User Profile:**  
-![User Profile](Screenshots/User Profile.png)  
+- **User Profile**  
+![User Profile](Screenshots/User%20Profile.png)
 
-- **Comment Section:**  
-![Comment Section](Screenshots/Comment Section.png)  
-
-
-## Technologies Used
-- **Frontend:** React, React Router, Axios, CSS/Bootstrap  
-- **Backend:** Node.js + Express (if backend exists)  
-- **Database:** MongoDB / Firebase / Local JSON (depending on your setup)  
-- **Version Control:** Git & GitHub  
+- **Comment Section**  
+![Comment Section](Screenshots/Comment%20Section.png)
 
 
