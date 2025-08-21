@@ -12,6 +12,40 @@ A web application where users can watch embedded YouTube videos, and admins can 
 - Edit or delete existing videos.
 - Manage users (optional, if implemented).
 
+---
+
+## Screenshots
+
+### Admin Screens
+- **Admin Login:**  
+![Admin Login](Screenshots/Admin Login.png)  
+
+- **Admin Dashboard:**  
+![Admin Dashboard](Screenshots/Admin Dashboard.png)  
+![Admin Dashboard-2](Screenshots/Admin Dashboard-2.png)  
+
+- **Edit Video:**  
+![Edit Video](Screenshots/Edit Video.png)  
+
+### User Screens
+- **User Login:**  
+![User Login](Screenshots/user login.png)  
+![User Login-2](Screenshots/user login-2.png)  
+
+- **User Dashboard:**  
+![User Dashboard](Screenshots/User Dashboard.png)  
+
+- **Video Play Page:**  
+![Play Video Page](Screenshots/Play video Page.png)  
+
+- **Login Dashboard:**  
+![Login Dashboard](Screenshots/Login Dashboard.png)  
+
+- **User Profile:**  
+![User Profile](Screenshots/User Profile.png)  
+
+- **Comment Section:**  
+![Comment Section](Screenshots/Comment Section.png)  
 
 
 ## Technologies Used
